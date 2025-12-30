@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Ethan Brooks | UX/UI Designer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio and resume site of Ethan Brooks, a creative UX/UI designer with 5 years of experience building modern web and mobile applications."
+    />
+    <meta
+      name="keywords"
+      content="Ethan Brooks, UX designer, UI designer, portfolio, web design, mobile app design, Figma, React"
+    />
+    <meta property="og:title" content="Ethan Brooks | UX/UI Designer Portfolio" />
+    <meta
+      property="og:description"
+      content="Creative UX/UI designer with 5 years of experience building modern web and mobile applications."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="Photograph/1234.JPEG" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      defer
+    ></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-watermark" aria-hidden="true">
+      Model website@xiaobai3
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo" data-i18n="logo">
+          Ethan<span>Brooks</span>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switcher" aria-label="Language switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+          </div>
+          <button
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker" data-i18n="hero.kicker">Portfolio &amp; Resume</p>
+            <h1 class="hero-title">Ethan Brooks</h1>
+            <h2 class="hero-subtitle" data-i18n="hero.role">UX/UI Designer</h2>
+            <p class="hero-description" data-i18n="hero.description">
+              Creative UX/UI designer with 5 years of experience building modern
+              web and mobile applications. Passionate about creating intuitive
+              and beautiful user experiences.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="#"
+                class="btn primary"
+                data-i18n="hero.download"
+                id="download-resume-btn"
+              >
+                Download Resume
+              </a>
+              <a href="#portfolio" class="btn ghost" data-i18n="hero.viewWork">
+                View Portfolio
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card">
+              <div class="hero-avatar" aria-hidden="true">
+                <img
+                  src="Photograph/1234.JPEG"
+                  alt="Portrait of Ethan Brooks"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="about.title">About Me</h2>
+            <p class="section-subtitle" data-i18n="about.subtitle">
+              Passionate about creating intuitive and beautiful user experiences.
+            </p>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p data-i18n="about.paragraph1">
+                Creative UX/UI designer with 5 years of experience building
+                modern web and mobile applications, from concept to launch.
+                I focus on clean visual language, clear information hierarchy,
+                and flows that feel effortless to use.
+              </p>
+              <p data-i18n="about.paragraph2">
+                I enjoy collaborating with product managers, developers, and
+                stakeholders to turn ideas into tested prototypes and shipped
+                products. My work spans responsive web design, native mobile
+                interfaces, and component-based design systems.
+              </p>
+            </div>
+            <div class="about-skills">
+              <h3 data-i18n="about.skillsTitle">Skills</h3>
+              <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-extra">
+            <div class="about-details">
+              <h3 data-i18n="about.detailsTitle">Profile details</h3>
+              <ul class="details-list">
+                <li>
+                  <span class="details-label" data-i18n="about.details.locationLabel"
+                    >Location</span
+                  >
+                  <span class="details-value" data-i18n="about.details.locationValue"
+                    >San Francisco, CA, USA (open to remote)</span
+                  >
+                </li>
+                <li>
+                  <span class="details-label" data-i18n="about.details.experienceLabel"
+                    >Experience</span
+                  >
+                  <span class="details-value" data-i18n="about.details.experienceValue"
+                    >5 years in UX/UI design</span
+                  >
+                </li>
+                <li>
+                  <span class="details-label" data-i18n="about.details.focusLabel"
+                    >Focus</span
+                  >
+                  <span class="details-value" data-i18n="about.details.focusValue"
+                    >Web &amp; mobile product design, UX flows</span
+                  >
+                </li>
+                <li>
+                  <span class="details-label" data-i18n="about.details.toolsLabel"
+                    >Tools</span
+                  >
+                  <span class="details-value" data-i18n="about.details.toolsValue"
+                    >Figma, Adobe XD, Photoshop, Illustrator</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="about-experience">
+              <h3 data-i18n="about.experienceTitle">Recent experience</h3>
+              <div class="experience-item">
+                <p class="experience-meta">
+                  <span data-i18n="about.experience1.period">2021 — Present</span>
+                  ·
+                  <span data-i18n="about.experience1.location"
+                    >San Francisco · Hybrid</span
+                  >
+                </p>
+                <p class="experience-role" data-i18n="about.experience1.role">
+                  Senior UX/UI Designer – CreativeTech Solutions
+                </p>
+                <p class="experience-text" data-i18n="about.experience1.text">
+                  Leading end-to-end design for web and mobile products,
+                  focusing on simplifying complex workflows, improving
+                  conversion, and aligning design decisions with business goals.
+                </p>
+              </div>
+              <div class="experience-item">
+                <p class="experience-meta">
+                  <span data-i18n="about.experience2.period">2019 — 2021</span>
+                  ·
+                  <span data-i18n="about.experience2.location"
+                    >San Francisco · On-site</span
+                  >
+                </p>
+                <p class="experience-role" data-i18n="about.experience2.role">
+                  UX/UI Designer – PixelFlow Studio
+                </p>
+                <p class="experience-text" data-i18n="about.experience2.text">
+                  Designed brand websites and portfolio experiences for clients,
+                  collaborating on user research, wireframes, and interactive
+                  prototypes for reviews and usability testing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-extra about-education">
+            <div class="about-details">
+              <h3 data-i18n="about.educationTitle">Education</h3>
+              <ul class="details-list">
+                <li>
+                  <span class="details-label" data-i18n="about.education1.degree"
+                    >Bachelor of Arts in Graphic Design</span
+                  >
+                  <span class="details-value" data-i18n="about.education1.school"
+                    >University of California · 2015–2019</span
+                  >
+                </li>
+                <li>
+                  <span class="details-label" data-i18n="about.education2.degree"
+                    >UX Design Certification</span
+                  >
+                  <span class="details-value" data-i18n="about.education2.school"
+                    >Interaction Design Foundation · 2020</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="portfolio.title">Selected Projects</h2>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">
+              A snapshot of recent design work across web and mobile products.
+            </p>
+          </div>
+          <div class="portfolio-grid">
+            <!-- Project 1 -->
+            <article class="portfolio-card">
+              <div class="portfolio-image-wrapper">
+                <img
+                  src="Photograph/1767075092098.JPEG"
+                  alt="Redesign of e-commerce app interface"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <p data-i18n="portfolio.project1.description">
+                    Redesigned a major e-commerce app for better usability and a
+                    modern visual system, simplifying checkout and improving
+                    product discovery to increase conversion.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3 data-i18n="portfolio.project1.title">
+                  Project 1: Redesign of e-commerce app
+                </h3>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="portfolio-card">
+              <div class="portfolio-image-wrapper">
+                <img
+                  src="Photograph/1767081651522.JPEG"
+                  alt="Portfolio website for a photographer"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <p data-i18n="portfolio.project2.description">
+                    Responsive portfolio website for a professional photographer,
+                    highlighting visual storytelling, project galleries, and
+                    smooth browsing across devices.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3 data-i18n="portfolio.project2.title">
+                  Project 2: Portfolio website for a photographer
+                </h3>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="portfolio-card">
+              <div class="portfolio-image-wrapper">
+                <img
+                  src="Photograph/1767081681203.JPEG"
+                  alt="Mobile banking app interface"
+                  loading="lazy"
+                />
+                <div class="portfolio-overlay">
+                  <p data-i18n="portfolio.project3.description">
+                    Mobile banking app interface designed with a focus on
+                    security, trust, and clear access to core actions like
+                    transfers, payments, and budgeting.
+                  </p>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3 data-i18n="portfolio.project3.title">
+                  Project 3: Mobile banking app interface
+                </h3>
+              </div>
+            </article>
+          </div>
+          <div class="photo-gallery">
+            <div class="photo-gallery-header">
+              <h3 data-i18n="photos.title">Photography snapshots</h3>
+              <p data-i18n="photos.subtitle">
+                A small selection of personal photography exploring light, texture,
+                and everyday scenes.
+              </p>
+            </div>
+            <div class="photo-grid">
+              <figure class="photo-card">
+                <img
+                  src="Photograph/1767075092098.JPEG"
+                  alt="Photography sample by Ethan Brooks"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="photo-card">
+                <img
+                  src="Photograph/1767081651522.JPEG"
+                  alt="Photography sample by Ethan Brooks"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="photo-card">
+                <img
+                  src="Photograph/1767081681203.JPEG"
+                  alt="Photography sample by Ethan Brooks"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="photo-card">
+                <img
+                  src="Photograph/1767081710027.JPEG"
+                  alt="Photography sample by Ethan Brooks"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="photo-card">
+                <img
+                  src="Photograph/1767081736434.JPEG"
+                  alt="Photography sample by Ethan Brooks"
+                  loading="lazy"
+                />
+              </figure>
+              <figure class="photo-card">
+                <img
+                  src="Photograph/1767081762520.JPEG"
+                  alt="Photography sample by Ethan Brooks"
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 data-i18n="contact.title">Contact Me</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">
+              Feel free to reach out for collaborations, freelance work, or just
+              to say hello.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <form
+              class="contact-form"
+              action="mailto:ethan.brooks@example.com"
+              method="POST"
+              enctype="text/plain"
+            >
+              <div class="form-group">
+                <label for="name" data-i18n="contact.form.nameLabel">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  data-i18n-placeholder="contact.form.namePlaceholder"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.emailLabel"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                  data-i18n-placeholder="contact.form.emailPlaceholder"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.messageLabel"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="How can I help you?"
+                  data-i18n-placeholder="contact.form.messagePlaceholder"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary" data-i18n="contact.form.submit">
+                Send Message
+              </button>
+            </form>
+            <div class="contact-info">
+              <h3 data-i18n="contact.infoTitle">Let&apos;s work together</h3>
+              <p data-i18n="contact.infoText">
+                I am open to remote-friendly roles, contract work, and selected
+                freelance projects. Share a bit about your product, timeline, and
+                goals, and I&apos;ll get back to you shortly.
+              </p>
+              <p class="contact-meta">
+                <span data-i18n="contact.infoEmailLabel">Email</span>:
+                <strong>ethan.brooks@example.com</strong>
+              </p>
+              <p class="contact-meta">
+                <span data-i18n="contact.infoPhoneLabel">Phone</span>:
+                <strong>+1 555-123-4567</strong>
+              </p>
+              <p class="contact-meta">
+                <span data-i18n="contact.infoAddressLabel">Address</span>:
+                <span data-i18n="contact.infoAddressValue">
+                  1234 Design Street, San Francisco, CA, USA
+                </span>
+              </p>
+              <a
+                href="mailto:ethan.brooks@example.com"
+                class="contact-email"
+              >
+                ethan.brooks@example.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <p class="footer-name">Ethan Brooks</p>
+          <p class="footer-role" data-i18n="footer.role">UX/UI Designer</p>
+        </div>
+        <div class="footer-center">
+          <div class="social-links">
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+            >
+              <span class="icon icon-tiktok"></span>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <span class="icon icon-instagram"></span>
+            </a>
+            <a
+              href="https://linkedin.com/in/ethanbrooks"
+              target="_blank"
+              rel="noopener"
+              aria-label="Behance"
+            >
+              <span class="icon icon-linkedin"></span>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <span class="icon icon-facebook"></span>
+            </a>
+            <a
+              href="https://www.pinterest.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="Pinterest"
+            >
+              <span class="icon icon-pinterest"></span>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="X"
+            >
+              <span class="icon icon-x"></span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-inner">
+            <p class="footer-meta">
+              &copy; <span id="year"></span> <span>Ethan Brooks</span>
+            </p>
+            <p class="footer-disclaimer">
+              All website content is fictional and for demonstration purposes only.
+            </p>
+          </div>
+        </div>
+        <div class="footer-watermark">
+          Ethan Brooks &ndash; Demo Site
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
